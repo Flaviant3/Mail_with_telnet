@@ -1,0 +1,27 @@
+HELO <your_computer>
+250 OK
+
+MAIL FROM:<you@you.com>
+250 OK
+
+RCPT TO:<target@target.com>
+250 OK
+
+RCPT TO:<target2@target2.com>
+250 OK
+
+DATA
+354 finish with <CRLF>.<CRLF> ( it mean ENTER dot ENTER ) like this <ENTER.ENTER>
+Subject: invitation
+From : Donald
+
+Hello world!
+Do you want to got eat with us?
+
+<CRLF> (ENTER on keyboard)
+.
+<CRLF> (ENTER on keyboard)
+250 OK
+
+QUIT
+250 OK
